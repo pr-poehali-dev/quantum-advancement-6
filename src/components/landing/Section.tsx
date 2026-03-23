@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import type { SectionProps } from "@/types"
 
-export default function Section({ id, title, subtitle, content, items, groups, table, schema, image, tag, isActive, showButton, buttonText }: SectionProps) {
+export default function Section({ id, title, subtitle, content, items, groups, table, schema, image, imagePlaceholder, tag, isActive, showButton, buttonText }: SectionProps) {
   return (
     <section id={id} className="relative h-screen w-full snap-start flex flex-col justify-center p-8 md:p-14 lg:p-20 overflow-hidden">
       {tag && (
@@ -155,6 +155,18 @@ export default function Section({ id, title, subtitle, content, items, groups, t
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <img src={image} alt="robot" className="rounded-2xl w-full object-cover max-h-[380px] lg:max-h-[460px] border border-neutral-800" />
+          </motion.div>
+        )}
+        {imagePlaceholder && !image && (
+          <motion.div
+            className="shrink-0 w-full lg:w-[360px] xl:w-[420px]"
+            initial={{ opacity: 0, x: 60 }}
+            animate={isActive ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, delay: 0.2 }}
+          >
+            <div className="rounded-2xl w-full border border-dashed border-neutral-700 bg-white/[0.02] flex items-center justify-center min-h-[260px] lg:min-h-[340px]">
+              <span className="text-neutral-600 text-sm font-mono">[ фото будет добавлено ]</span>
+            </div>
           </motion.div>
         )}
       </div>

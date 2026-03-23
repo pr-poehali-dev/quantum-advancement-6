@@ -15,6 +15,7 @@ export interface Section {
   table?: TableData
   schema?: string
   image?: string
+  imagePlaceholder?: boolean
   tag?: string
   showButton?: boolean
   buttonText?: string

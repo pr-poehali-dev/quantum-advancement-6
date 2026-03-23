@@ -70,9 +70,9 @@ export default function LandingPage() {
           />
         ))}
         <div className="fixed bottom-6 right-6 z-30 flex items-center gap-2">
-          <span className="text-white font-bold text-lg tabular-nums">{String(activeSection + 1).padStart(2, '0')}</span>
+          <span className="text-white font-bold text-lg tabular-nums">{activeSection + 1}</span>
           <span className="text-neutral-600 text-sm">/</span>
-          <span className="text-neutral-500 text-sm tabular-nums">{String(sections.length).padStart(2, '0')}</span>
+          <span className="text-neutral-500 text-sm tabular-nums">{sections.length}</span>
         </div>
       </div>
     </Layout>

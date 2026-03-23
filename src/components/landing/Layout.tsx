@@ -6,7 +6,7 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="h-screen overflow-hidden bg-[#060606] relative">
+    <div className="h-screen overflow-hidden bg-[#000000] relative">
 
       <div className="relative z-20 h-full">
         {children}

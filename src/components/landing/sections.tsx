@@ -7,7 +7,7 @@ export const sections = [
     items: [
       'Саламатин А.И., Колесников С.А.',
     ],
-    image: 'https://cdn.poehali.dev/projects/abb42e91-f389-4b6b-800e-74441dcd6e21/files/b85383ec-354b-4da7-8ed4-3a73ecab4a9e.jpg',
+    imagePlaceholder: true,
   },
   {
     id: 'intro',
@@ -69,7 +69,7 @@ export const sections = [
         ],
       },
     ],
-    imagePlaceholder: true,
+    image: 'https://cdn.poehali.dev/files/cae675af-2ed4-438f-9f37-5ceba62083ad.jpg',
   },
   {
     id: 'hardware',
@@ -112,27 +112,13 @@ export const sections = [
     id: 'architecture',
     tag: 'Архитектура системы',
     title: 'Структурная схема',
-    imagePlaceholder: true,
+    image: 'https://cdn.poehali.dev/projects/abb42e91-f389-4b6b-800e-74441dcd6e21/bucket/6ff521f4-b7fe-48c6-b1fd-434e0584c11a.png',
   },
   {
     id: 'software',
     tag: 'Алгоритмы и ПО',
     title: 'Алгоритм управления',
-    schema: `  Захват кадра с USB-камеры
-           ↓
-  Поиск QR-кода (ZBar / OpenCV)
-           ↓
-  QR найден? ──Нет──→ повтор
-       ↓ Да
-  Анализ команды: ROAD1 / ROAD2 / ROAD3
-           ↓
-  Формирование последовательности команд
-           ↓
-  Отправка команд на STM32 по UART
-           ↓
-  STM32 выполняет движение
-           ↓
-  Проверка QR-метки (POINT1/2/3)`,
+    image: 'https://cdn.poehali.dev/projects/abb42e91-f389-4b6b-800e-74441dcd6e21/bucket/4df7b010-f9de-4f6c-be15-25803cb11091.png',
     items: [
       'C/C++ — прошивка STM32 (HAL библиотеки)',
       'Python 3 — верхний уровень на Raspberry Pi',

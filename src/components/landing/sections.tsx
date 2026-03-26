@@ -38,6 +38,7 @@ export const sections = [
     id: 'book',
     tag: 'Книга',
     title: 'Эдвард Росс «Как устроено кино»',
+    image: 'https://cdn.poehali.dev/projects/abb42e91-f389-4b6b-800e-74441dcd6e21/files/1a62e53c-3e9a-4f20-8b2d-7e1c56827dcb.jpg',
     content: 'Эдвард Росс — режиссер и сценарист. Он написал эту книгу не как скучный учебник, а как практическое руководство для зрителя.',
     items: [
       'Книга отвечает на вопрос: почему мы чувствуем то, что чувствуем, когда смотрим фильм?',
@@ -134,6 +135,7 @@ export const sections = [
     id: 'film',
     tag: 'Фильм',
     title: '«Бесславные ублюдки» (2009)',
+    image: 'https://cdn.poehali.dev/projects/abb42e91-f389-4b6b-800e-74441dcd6e21/files/2687edef-904b-4253-9ff4-a60e8420f75d.jpg',
     content: 'Режиссер: Квентин Тарантино.',
     groups: [
       {
@@ -239,6 +241,7 @@ export const sections = [
     id: 'director',
     tag: 'Режиссер',
     title: 'Эдгар Райт',
+    image: 'https://cdn.poehali.dev/projects/abb42e91-f389-4b6b-800e-74441dcd6e21/files/0804d718-0f86-45b3-9679-5ea5f6a95b91.jpg',
     content: 'Британский режиссер, сценарист и продюсер.',
     groups: [
       {
@@ -383,6 +386,7 @@ export const sections = [
     id: 'thanks',
     tag: 'Конец',
     title: 'Спасибо за внимание!',
+    image: 'https://cdn.poehali.dev/projects/abb42e91-f389-4b6b-800e-74441dcd6e21/files/84171e55-e8f5-4477-a80e-485bdb9370c1.jpg',
     content: 'Я готов ответить на ваши вопросы.',
   },
 ]
